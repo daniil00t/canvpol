@@ -96,10 +96,23 @@
 					dy = -dy;
 					console.log("up")
 				}
+
 				// right
+				if(this.x < j[1] && this.x > j[1] - 8 && (this.y > j[0] && this.y < j[2]) ){
+					dx = -dx;
+					console.log("l")
+				}
+
+
+				// bottom
+				if(this.y <= j[2] && this.y > j[2] - 5 && (this.x >= j[3] && this.x <= j[1])){
+					dy = -dy;
+					console.log("bottom")
+				}
+
 
 				// left
-				else if(this.x > j[3] && this.x < j[3] + 8 && (this.y > j[0] && this.y < j[2]) ){
+				if(this.x > j[3] && this.x < j[3] + 8 && (this.y > j[0] && this.y < j[2]) ){
 					dx = -dx;
 					console.log("l")
 				}
@@ -136,24 +149,28 @@
 			h: 100
 		},
 		{
-			x: 1000,
+			x: 750,
 			y: WHEIGHT - 500,
-			w: 300,
-			h: 400,
-			bgc: "yellow"
+			w: 400,
+			h: 100
 		},
 		{
-			x: WWIDTH - 400,
-			y: WHEIGHT - 100,
-			w: 400,
-			h: 100,
-			bgc: "brown"
-		}
+			x: WWIDTH - 500,
+			y: WHEIGHT - 500,
+			w: 100,
+			h: 500
+		},
+		{
+			x: WWIDTH - 1000,
+			y: WHEIGHT - 500,
+			w: 100,
+			h: 500
+		},
 	])
 	polygon.init();
 	// polygon.drawRect(100, polygon.h - 100, 200, 100, "green");
 
-	let circle = new Circle(polygon.ctx, 400, WHEIGHT - 200, 50, "pink");
+	let circle = new Circle(polygon.ctx, WWIDTH - 100, WHEIGHT - 200, 50, "pink");
 	circle.init();
 
 	circle.loadCoordsObjects(polygon.objects);
