@@ -3,11 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Canvas Animate Boxx</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media/style.css">
 	<meta viewport>
 </head> 
 <body> 
-	<canvas id="main_canvas"></canvas>
-	<script src="main.js"></script>
+
+	<div class="wrap_menu">
+		<div class="menu">
+			<p class="head">Old Ball'chik</p>
+			<p class="caption">Игра посвящена своей предшественнеце - 8 битной такой же игре. Ваша задача набрать как можно больше очков, при этом не пропустить мячик!</p>
+			
+			<p class="text-center">
+				<span class="caption_name">Ваше имя:</span><br>
+				<input type="text" id="name_player">
+			</p>
+			<p class="text-center">
+				<button id="but_start">
+					Start
+				</button>
+			</p>
+		</div>
+	</div>
+
+	<canvas style="display: none" id="main_canvas"></canvas>
+
+	<script src="scripts/ee.js"></script>
+	<script src="scripts/ui.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+@font-face {
+	font-family: "MontserratRegular";
+	src: url("fonts/montserrat-regular.ttf");
+}
+@font-face {
+	font-family: "MontserratMedium";
+	src: url("fonts/montserrat-medium.ttf");
+}
+@font-face {
+	font-family: "MontserratBold";
+	src: url("fonts/montserrat-bold.ttf");
+}
+@font-face {
+	font-family: "MontserratBlack";
+	src: url("fonts/montserrat-black.ttf");
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+/*	width: 100vw;
+	height: 100vh;*/
+}
+body canvas#main_canvas{
+	width: 100%;
+	height: 100%;
+	overflow: noscroll;
+}
+.text-center{
+	text-align: center;
+}
+.wrap_menu{
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.wrap_menu .menu{
+	width: 400px;
+	height: 400px;
+	min-height: 300px;
+	background-color: #333;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,.4);
+	padding: 25px;
+}
+.wrap_menu .menu .head{
+	text-align: center;
+	color: #fff;
+	font-family: MontserratBlack;
+	font-size: 1.5em;
+}
+.wrap_menu .menu .caption{
+	color: #c5c5c5;
+	font-family: MontserratRegular;
+	font-size: 1.1em;
+}
+.wrap_menu .menu button#but_start{
+	width: 140px;
+	color: #fff;
+	background-color: #d0c200;
+	border: none;
+	border-bottom: 3px solid #ab9f00;
+	font-size: 1.2em;
+	font-family: MontserratBlack;
+	border-radius: 30px;
+	padding: 10px 20px;
+	-webkit-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	cursor: pointer;
+	outline: none;
+	margin-top: 30px;
+}
+.wrap_menu .menu button#but_start:hover{
+	background-color: #ab9f00;
+}
+.wrap_menu .menu .caption_name{
+	color: #fff;
+	font-family: MontserratMedium;
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+
+.wrap_menu .menu #name_player{
+	border: none;
+	width: 250px;
+	height: 40px;
+	text-align: center;
+	outline:none;
+	border-radius: 7px;
+	font-family: MontserratBlack;
+	font-size: 1.3em;
+	color: #222;
+}
